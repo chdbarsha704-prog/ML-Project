@@ -18,7 +18,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info('Entered the data ingestion method or component')
         try:
-            df=pd.read_csv('notebook\data\stud.csv')
+            df=pd.read_csv('notebook/data/stud.csv')
             logging.info('Read the dataset as DataFrame')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
@@ -28,3 +28,14 @@ class DataIngestion:
             train_set,test_set=train_test_split(df,test_size=0.2,random_state=42)
             train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
+            logging.info('Data ingestion Completed')
+            return(
+                self.ingestion_config.train_data_path,
+                self.ingestion_config.test_data_path
+            )
+        except Exception as e:
+            raise CustomException(e,sys)
+
+if __name__=='__main__':
+    obj=DataIngestion()
+    train_data,test_data=obj.initiate_data_ingestion()
