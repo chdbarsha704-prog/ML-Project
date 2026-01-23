@@ -1,0 +1,164 @@
+[2026-01-23 13:32:06,032] 97 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-01-23 13:32:06,032] 97 - INFO - [33mPress CTRL+C to quit[0m
+[2026-01-23 13:32:22,881] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:32:22] "GET / HTTP/1.1" 200 -
+[2026-01-23 13:32:23,077] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:32:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-01-23 13:34:02,619] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:34:02] "GET / HTTP/1.1" 200 -
+[2026-01-23 13:37:28,646] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:37:28] "GET / HTTP/1.1" 200 -
+[2026-01-23 13:38:39,514] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:38:39] "GET /predictdata HTTP/1.1" 200 -
+[2026-01-23 13:42:20,093] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:42:20] "GET /predictdata HTTP/1.1" 200 -
+[2026-01-23 13:42:40,110] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:42:40] "GET /predictdata HTTP/1.1" 200 -
+[2026-01-23 13:43:18,818] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:43:18,820] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:43:18] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:43:48,863] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:43:48,865] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:43:48] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:44:39,718] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:44:39,719] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:44:39] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:44:47,615] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:44:47] "GET / HTTP/1.1" 200 -
+[2026-01-23 13:45:04,630] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:45:04] "GET /predictdata HTTP/1.1" 200 -
+[2026-01-23 13:45:30,692] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:45:30,694] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:45:30] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:45:47,737] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:45:47,739] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:45:47] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:46:22,102] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:46:22,103] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:46:22] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:46:28,584] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:46:28,585] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:46:28] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:46:32,742] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:46:32,743] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:46:32] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:53:12,459] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:53:12] "GET /predictdata HTTP/1.1" 200 -
+[2026-01-23 13:53:37,744] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:53:37,745] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:53:37] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-01-23 13:59:13,256] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:59:13] "GET /predictdata HTTP/1.1" 200 -
+[2026-01-23 13:59:37,686] 875 - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Lenovo\Desktop\ML Project\myenv\Lib\site-packages\flask\app.py", line 1212, in make_response
+    raise TypeError(
+    ...<3 lines>...
+    )
+TypeError: The view function for 'predict_datapoint' did not return a valid response. The function either returned None or ended without a return statement.
+[2026-01-23 13:59:37,687] 97 - INFO - 127.0.0.1 - - [23/Jan/2026 13:59:37] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
