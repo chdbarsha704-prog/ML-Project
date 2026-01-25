@@ -36,5 +36,6 @@ def predict_datapoint():
         print(results)
         return render_template('student.html',results=results[0])
 
-
+if __name__=="__main__":
+    app.run(host='0.0.0.0',port=8080)#docker ko host number
                    
